@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>UPM Project</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/fonts/font_awesome/css/font-awesome.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400" rel="stylesheet">
+   </head>
+   <body class="background">
+      <div class="site-wrapper">
+         <div class="cover-container">
+            <nav class="navbar navbar-default navbar-fixed-top">
+               <div class="container-fluid navcontainer">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                     <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo"></a>
+                  </div>
+                  <ul class="nav navbar-nav nav_select ">
+                     <li >
+                        <a href="#" class="dropdown-toggle citydropdown " data-toggle="dropdown" aria-expanded="true">London </a>
+                        <ul class="dropdown-menu drop_menu drop_menu_city" role="menu" >
+                           <li><a href="#">Bristol</a></li>
+                           <li><a href="#">Manchester</a></li>
+                           <li><a href="#">Birmingham</a></li>
+                           <li><a href="#">Newcastle</a></li>
+                           <li><a href="#">Liverpool</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right navbar_link">
+                     <li> <a data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();" class="loginborder"><span class="loginlink">Log in</span></a></li>
+                     <li> <a data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();" ><span class="signuplink">Sign Up</span></a></li>
+                  </ul>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav navbar-right sub_menu">
+                        <li class="favourite_disabled"> <a>Favourite</a></li>
+                        <li class="saved_search_disabled"> <a>Saved Searches</a></li>
+                        <li class="map_view"><a href="map.html">Map View</a></li>
+                     </ul>
+                  </div>
+                  <!-- /.navbar-collapse --> 
+               </div>
+               <!-- /.container-fluid --> 
+            </nav>
+            <div class="container">
+               <div class="overlay">
+                  <div class="overlay-inner">
+                     <p class="hometitle"> Find the best areas for thing you love</p>
+                     <div class="firstrow" >
+                        <div  class="selectdiv">
+                           <div class="dropdown">
+                              <button type="button" class="dropdown-toggle drop_menu_a dropbtn1" data-toggle="dropdown" aria-expanded="true"> Select </button>
+                              <ul role="menu" class="dropdown-menu drop_menu drop_menu1" aria-labelledby="drop1">
+                                 <li role="presentation"><a href="#" role="menuitem">Nature</a></li>
+                                 <li role="presentation"><a href="#" role="menuitem">Cell</a></li>
+                                 <li role="presentation"><a href="#" role="menuitem">Science</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <!-- <div  class="selectdiv">
+                           <select class="form-control select_default ">
+                           <option>select</option>
+                           <option>Nature</option>
+                           <option>Cell</option>
+                           <option>Science</option>
+                           </select>      
+                           </div>-->
+                        <div class="selectbar disbale_slider">
+                           <span class="sliderlink">Avoid</span>
+                           <input type="text" value="0.4" data-slider="true" data-slider-highlight="true"  >
+                           <span  class="sliderlink">Want</span> 
+                        </div>
+                     </div>
+                     <div class="firstrow" >
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div  class="selectdiv">
+                           <div class="dropdown">
+                              <button type="button" class="dropdown-toggle drop_menu_a dropbtn3" data-toggle="dropdown" aria-expanded="true"> Select </button>
+                              <ul role="menu" class="dropdown-menu drop_menu drop_menu3 " aria-labelledby="drop1">
+                                 <li role="presentation"><a href="#" role="menuitem">Nature</a></li>
+                                 <li role="presentation"><a href="#" role="menuitem">Cell</a></li>
+                                 <li role="presentation"><a href="#" role="menuitem">Science</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div  class="selectdiv">
+                           <div class="dropdown">
+                              <button type="button" class="dropdown-toggle drop_menu_a dropbtn2" data-toggle="dropdown" aria-expanded="true"> Select </button>
+                              <ul role="menu" class="dropdown-menu drop_menu drop_menu2" aria-labelledby="drop1">
+                                 <li role="presentation"><a href="#" role="menuitem">Nature</a></li>
+                                 <li role="presentation"><a href="#" role="menuitem">Cell</a></li>
+                                 <li role="presentation"><a href="#" role="menuitem">Science</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="selectbar">
+                           <span class="sliderlink">Avoid</span>
+                           <input type="text" value="0.2" data-slider="true" data-slider-highlight="true"  >
+                           <span  class="sliderlink">Want</span> 
+                        </div>
+                     </div>
+                     <div class="row ">
+                        <button class=" default_btn filterbtn">Add More Filters</button>
+                     </div>
+                     <div class="row">
+                        <div class="submit_btn">
+                           <button class="btn default_btn btn_clear grad">Clear</button>
+                           <button class="btn default_btn btn_submit grad">Find</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade login" id="loginModal">
+         <div class="modal-dialog login animated">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">LOGIN</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="box">
+                     <div class="content">
+                        <p class="text-center continue"> Continue with </p>
+                        <div class="social"> <a id="facebook_login" class="facebook"> <img src="assets/img/facebook_login.png" class="facebook"> </a> <a id="google_login"  > <img src="assets/img/google_login.png" class="google"> </a> </div>
+                        <div class="division">
+                           <div class="line l"></div>
+                           <span>or</span>
+                           <div class="line r"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="form loginBox">
+                           <form method="post" accept-charset="UTF-8">
+                              <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                              <input id="password" class="form-control password_field" type="password" placeholder="Password" name="password">
+                              <div class="row">
+                                 <div class="col-md-8">
+                                    <div class="checkbox check">
+                                       <label><input type="checkbox" value="">Remember Me</label>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-4 text-right forget">Forgot Password?</div>
+                              </div>
+                              <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="box">
+                     <div class="content registerBox" style="display:none;">
+                        <div class="form">
+                           <form method="post"  data-remote="true"  accept-charset="UTF-8">
+                              <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                              <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                              <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                              <input class="btn btn-default btn-register" type="button" value="Create account" name="commit" onclick="loginAjax()">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <div class="forgot login-footer"> <span>New at Context ? <a href="javascript: showRegisterForm();" class="modallink">Sign Up</a></span> </div>
+                  <div class="forgot register-footer" style="display:none"> <span>Already have an account?</span> <a href="javascript: showLoginForm();">Login</a> </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="pagefooter">
+            <ul class="footerlist">
+            <li>COPYRIGHT  © UPM.</li>
+            <li class="rightborder"><a>About Us</a> </li>
+            <li class="rightborder">
+               <a>
+                  Privacy Policy 
+            </li>
+            <li><a>Terms of Use</a></li>
+         </div>
+      </footer>
+      <script src="assets/js/jquery-3.1.1.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/js/simple-slider.js"></script>
+      <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+   </body>
+</html>
